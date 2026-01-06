@@ -11,6 +11,33 @@ body {
   color: #333;
 }
 
+
+/* GLOBAL */
+html, body {
+  height: 100%;
+  background: #0f172a; /* même couleur que header/footer */
+  overscroll-behavior: none;
+}
+
+
+
+/* LAYOUT PRINCIPAL */
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+
+/* CONTENU */
+main {
+  flex: 1;
+  background: #f1f5f9; /* fond clair du contenu */
+}
+
+
 /* NAV */
 .header {
   background: #0f172a;
@@ -159,6 +186,7 @@ body {
   max-width: 520px;
   width: 100%;
   text-align: center;
+  border: #050505;
 }
 
 /* PHOTO PROFIL - FIX DEFINITIF */
@@ -179,3 +207,6 @@ body {
   display: block;
 }
 
+.footer p {
+  margin: 0;
+}
