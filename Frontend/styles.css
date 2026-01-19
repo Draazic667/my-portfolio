@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 body {
@@ -21,7 +22,7 @@ html, body {
 
 
 
-/* LAYOUT PRINCIPAL */
+/* Home PRINCIPAL */
 body {
   display: flex;
   flex-direction: column;
@@ -34,7 +35,7 @@ body {
 /* CONTENU */
 main {
   flex: 1;
-  background: #eef0f2; /* fond clair du contenu */
+  background: #080808; /* fond clair du contenu */
 }
 
 
@@ -42,7 +43,10 @@ main {
 .header {
   background: #0f172a;
   padding: 2rem 3rem;
+  position: relative;
+  z-index: 10;
 }
+
 
 .nav {
   display: flex;
@@ -206,6 +210,7 @@ main {
   width: 100%;
   text-align: center;
   border: 1px solid #7f8083;
+  border: 4px solid #0f172a;;
 }
 
 /* PHOTO PROFIL - FIX DEFINITIF */
@@ -341,14 +346,16 @@ main {
 .about-container {
   display: flex;
   flex-direction: column;
-  align-items: center;      /* centre horizontalement */
-  text-align: center;       /* centre le texte */
+  align-items: flex-start;   /* ← alignement à gauche */
   gap: 3rem;
+  max-width: 900px;
+  margin: 0 auto;            /* ← centre le bloc dans la page */
 }
 
 /* Texte parcours */
 .about-text {
-  max-width: 600px;
+  max-width: 650px;
+  text-align: left;          /* ← lecture naturelle */
 }
 
 /* Cards */
@@ -356,7 +363,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  align-items: center;
+  align-items: flex-start;   /* ← cards à gauche */
 }
 
 .about-card {
@@ -364,16 +371,83 @@ main {
   width: 100%;
   border: 1px solid #7f8083;
   border-radius: 10px;
+  padding: 1.5rem 2rem;
+  text-align: left;
 }
 
-.about-text h4 {
+/* Titres */
+.about-text h4,
+.about-card h4 {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
-.about-text p {
+/* Paragraphes */
+.about-text p,
+.about-card p {
   font-size: 1.1rem;
   line-height: 1.8;
 }
 
+
+/* CONTACT FORMULAIRE */
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #7f8083;
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* ABOUT PAGE - texte lisible */
+.about-container,
+.about-container h2,
+.about-container h3,
+.about-container h4,
+.about-container p {
+  color: #f1f5f9;
+}
+.about-card {
+  background: #020617; /* bleu très sombre */
+  color: #f1f5f9;
+}
+.about-card p {
+  color: #d1d5db;
+}
+.section h3 {
+  color: #ffffff;
+}
+/* Texte clair UNIQUEMENT sur pages dark */
+.projects-grid .card,
+.about-card,
+.info-card,
+.skills-card {
+  color: #f1f5f9;
+}
 
