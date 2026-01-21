@@ -1,7 +1,6 @@
 /* RESET */
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 
 }
@@ -277,12 +276,12 @@ main {
 }
 
 .bg2 {
-  background-image: url("asset/background/carrousel2.jpg");
+  background-image: url("asset/background/vraie photo.avif");
   animation-delay: 6s;
 }
 
 .bg3 {
-  background-image: url("asset/background/carrousel3.jpg");
+  background-image: url("asset/background/vrai photo.avif");
   animation-delay: 12s;
 }
 
@@ -471,3 +470,12 @@ main {
   opacity: 0.95;           /* léger adoucissement */
 }
 
+/* Texte d’introduction des sections (About / Projects) */
+.section-intro {
+  max-width: 720px;
+  margin: 1.5rem auto 3rem auto; /* centré + espace bas */
+  text-align: center;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #d1d5db; /* gris doux lisible */
+}
