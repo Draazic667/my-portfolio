@@ -458,7 +458,7 @@ main {
 }
 
 /* PROJECTS INTRO TEXT */
-.projects-intro {
+.project-intro {
   max-width: 760px;
   margin: 1.5rem auto 3.5rem;
   text-align: center;
@@ -470,12 +470,33 @@ main {
   opacity: 0.95;           /* léger adoucissement */
 }
 
-/* Texte d’introduction des sections (About / Projects) */
 .section-intro {
   max-width: 720px;
-  margin: 1.5rem auto 3rem auto; /* centré + espace bas */
+  margin: 1.5rem auto 3rem auto;
   text-align: center;
-  font-size: 1.05rem;
-  line-height: 1.8;
-  color: #d1d5db; /* gris doux lisible */
+
+  font-size: 1.1rem;
+  line-height: 1.9;
+  font-weight: 400;
+
+  color: #cbd5f5; /* beaucoup plus lisible */
 }
+.card {
+  background: linear-gradient(
+    180deg,
+    rgba(15, 23, 42, 0.9),
+    rgba(2, 6, 23, 0.9)
+  );
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+
+  padding: 1.5rem;
+  color: #e5e7eb;
+}
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #c7d2fe;
+}
+
