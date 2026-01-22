@@ -500,3 +500,15 @@ main {
   color: #c7d2fe;
 }
 
+.projects-title {
+  display: flex;
+  justify-content: center; /* centre le titre */
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.epitech-logo {
+  height: 50px;  /* taille propre */
+  width: auto;
+  object-fit: contain;
+}
